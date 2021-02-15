@@ -10,6 +10,64 @@ html {
 }
 
 body {
-	line-height: 1.3;
 	font-family: 'Karla', sans-serif;
+	line-height: 1.3;
+	background-color: var(--ltgray);
+	color: var(--grayblue);
+	padding: var(--paddingx);
+}
+
+:root {
+	--white: hsl(0, 0%, 100%);
+	--cyan: hsl(179, 62%, 43%);
+	--ltcyan: hsl(179, 62%, 50%);
+	--yellow: hsl(71, 73%, 54%);
+	--ltgray: hsl(204, 43%, 93%);
+	--grayblue: hsl(218, 22%, 67%);
+	--paddingx: 1.8rem;
+	--paddingy: 1.5rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+	margin-top: 0;
+	line-height: 1.15;
+}
+
+.price {
+	border-radius: 0.5rem;
+	overflow: hidden;
+	@media only screen and (min-width: 62.5em) {
+		display: grid;
+	}
+}
+
+.price > * {
+	padding: var(--paddingx) var(--paddingy);
+}
+.community {
+	background-color: var(--white);
+}
+
+.community h2 {
+	font-size: 1.25rem;
+	color: var(--cyan);
+	font-weight: bold;
+}
+
+.community .subtitle {
+	font-size: 1rem;
+	color: var(--yellow);
+	font-weight: bold;
+}
+
+.community p {
+	font-size: 0.7rem;
+	line-height: 1.75;
+	margin-bottom: 0;
 }
